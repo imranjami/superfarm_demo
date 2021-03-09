@@ -1,6 +1,6 @@
 .productCard {
   position: relative;
-  height: 370px;
+  height: 100%;
   width: 580px;
   border-radius: 15px;
   background-color: white;
@@ -41,6 +41,7 @@
 
 .productCard__top > img {
   width: 125px;
+  height: 174px;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
@@ -99,6 +100,8 @@
 
 .productCard__seller__collection {
   display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .productCard__seller__collection > img:first-of-type {
@@ -180,6 +183,7 @@
 
 .productCard__bottom__description {
   font-size: 12px;
+  text-align: center;
 }
 
 .productCard__bottom__right > img {
@@ -188,4 +192,130 @@
   height: 114px;
   width: 96px;
   object-fit: cover;
+}
+
+.productCard__bottom__right {
+  padding-right: 5px;
+}
+
+.productCard__top__mobile > h1 {
+  font-size: 7vw;
+  font-weight: bold;
+  color: #42256c;
+}
+
+.productCard__top__mobile > p {
+  font-weight: bold;
+  color: #6f0eff;
+  font-size: 3vw;
+}
+
+.productCard__top__mobile {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vw 5vw 2vw 5vw;
+}
+
+@media (max-width: 635px) {
+  .productCard__top__mobile {
+    display: flex;
+  }
+  .productCard__seller {
+    border-top: none;
+    padding-bottom: 0;
+  }
+
+  .productCard {
+    width: 90vw;
+    height: 100%;
+  }
+  .productCard__top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw 5vw 5vw;
+  }
+
+  .productCard__top > img {
+    height: 90vw;
+    width: 80vw;
+  }
+
+  .productCard__time {
+    font-size: 5vw;
+    padding: 3vw;
+  }
+
+  .productCard__time > img {
+    display: none;
+  }
+
+  .productCard__time {
+    display: none;
+  }
+
+  .productCard__body {
+    width: 100%;
+    margin: 0;
+  }
+
+  .productCard__info {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .productCard__body > h1 {
+    display: none;
+  }
+
+  .productCard__seller {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .productCard__seller__name > p {
+    font-size: 3vw;
+  }
+
+  .productCard__seller__collection > p {
+    font-size: 3vw;
+  }
+
+  .productCard__info {
+    font-size: 2.8vw;
+    word-wrap: break-word;
+  }
+
+  .productCard__bottom__right img:first-child {
+    display: none;
+  }
+
+  .productCard__seller__name img:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .productCard__bottom__left {
+    padding: 6vw 10vw;
+  }
+
+  .productCard__bottom__right img:last-child {
+    display: none;
+  }
+
+  .productCard__top b {
+    display: none;
+  }
+
+  .productCard__bottom__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  .productCard__bottom__right img {
+    width: 25vw;
+  }
 }

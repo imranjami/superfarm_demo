@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard"
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <div className="cards">
         <ProductCard />

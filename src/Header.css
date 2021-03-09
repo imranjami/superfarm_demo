@@ -80,6 +80,9 @@
 
 .header__right {
   display: flex;
+  width: 50vw;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header__search {
@@ -89,8 +92,9 @@
   border-radius: 18px;
   height: 34px;
   background-color: #eef3f8;
-  width: 250px;
   height: 48px;
+  width: 250px;
+  transition: width ease-in 0.3s;
 }
 
 .header__search > input {
@@ -154,6 +158,17 @@
 
 .header__mobileLogo {
   width: 200px;
+  height: 100%;
+}
+
+@media (max-width: 1175px) {
+  .header__right {
+    width: inherit;
+  }
+
+  .header__search {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -181,5 +196,18 @@
 
   .header__mobile {
     display: flex;
+  }
+
+  .header__mobile > i {
+    margin: 2vw;
+  }
+
+  .header__profilePic {
+    margin: 2vw;
+    width: 10vw;
+  }
+
+  .header__mobileLogo {
+    width: 50vw;
   }
 }

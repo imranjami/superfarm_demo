@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.app {
+  width: 100vw;
+}
+
 body {
   background-color: #f5faff;
 }
@@ -18,5 +22,11 @@ body {
 @media (max-width: 1240px) {
   .cards {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1240px) {
+  .cards {
+    margin-top: 5vh;
   }
 }

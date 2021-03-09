@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Circular Std Bold";
+  src: url("css/fonts/Circular Std Bold.eot");
+  src: url("css/fonts/Circular Std Bold.woff") format("woff"),
+    url("css/fonts/Circular Std Bold.otf") format("opentype"),
+    url("css/fonts/Circular Std Bold.svg#filename") format("svg");
+}

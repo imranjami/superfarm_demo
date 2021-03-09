@@ -24,6 +24,10 @@ function ProductCard() {
         <img src={time} />
         <p>13h 23mins</p>
       </div>
+      <div className="productCard__top__mobile">
+        <h1>{title}</h1>
+        <p>13h 23mins</p>
+      </div>
       <div className="productCard__top">
         <img src={gem_hunter} />
         <div className="productCard__body">

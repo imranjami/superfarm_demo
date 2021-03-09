@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import logo from "./assets/logo.svg"
 import mobile_logo from "./assets/mobile_logo.svg"
 import search_icon from "./assets/search.svg"
@@ -9,6 +9,8 @@ import dropdown from "./assets/dropdown.svg"
 import "./Header.css"
 
 function Header() {
+  const [isMyInputFocused, setIsMyInputFocused] = useState(false)
+
   return (
     <div className="header">
       <div className="header__mobile">
@@ -27,9 +29,17 @@ function Header() {
         </ul>
       </div>
       <div className="header__right">
-        <div className="header__search">
+        <div
+          style={{ width: isMyInputFocused ? "100%" : "" }}
+          className="header__search"
+        >
           <img src={search_icon} />
-          <input placeholder="Search NFTs & Farms" type="text"></input>
+          <input
+            onBlur={() => setIsMyInputFocused(false)}
+            onFocus={() => setIsMyInputFocused(true)}
+            placeholder="Search NFTs & Farms"
+            type="text"
+          ></input>
         </div>
         <img className="header__notification" src={notification} />
         <img className="header__profilePic" src={profile_pic} />
