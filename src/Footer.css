@@ -1,0 +1,102 @@
+.footer {
+  height: 120px;
+  width: 100vw;
+  background-color: #283040;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 35px;
+  color: #dee5ef;
+  font-family: "Circular Std Bold";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__left > img {
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.footer__left ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer__left li {
+  margin: 0px 15px;
+  opacity: 0.8;
+  transition: ease-in 0.2s;
+}
+
+.footer__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__right > p {
+  color: #97a4ba;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.footer__socials li {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+  color: white;
+  transition: ease-in 0.2s;
+}
+
+.footer__socials i {
+  font-size: 1.2rem;
+}
+
+.footer__socials li:hover {
+  background-color: white;
+  box-shadow: none;
+  cursor: pointer;
+  color: #283040;
+}
+
+.footer__left li:hover {
+  cursor: pointer;
+  color: white;
+  opacity: 1;
+}
+
+@media (max-width: 1240px) {
+  .footer {
+    position: relative;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .footer__left ul {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .footer__right > p {
+    display: none;
+  }
+}
