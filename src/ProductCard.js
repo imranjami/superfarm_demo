@@ -29,7 +29,7 @@ function ProductCard() {
         <p>13h 23mins</p>
       </div>
       <div className="productCard__top">
-        <img src={gem_hunter} />
+        <img src={degen_waifu} />
         <div className="productCard__body">
           <h1>{title}</h1>
           <div className="productCard__seller">
@@ -68,9 +68,9 @@ function ProductCard() {
         </div>
         <img src={chevron_right} />
         <div className="productCard__bottom__right">
-          <img src={gem_hunter}></img>
-          <img src={gem_hunter}></img>
-          <img src={gem_hunter}></img>
+          <img src={degen_waifu}></img>
+          <img src={degen_waifu}></img>
+          <img src={degen_waifu}></img>
         </div>
       </div>
     </div>
