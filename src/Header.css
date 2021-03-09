@@ -11,6 +11,10 @@
   margin-right: 20px;
 }
 
+.header__logo:hover {
+  cursor: pointer;
+}
+
 .header__left {
   display: flex;
   align-items: center;
@@ -68,10 +72,6 @@
 .header__left li:not(:last-child):hover::before {
   visibility: visible;
   transform: scaleX(1);
-}
-
-.header__logo:hover {
-  cursor: pointer;
 }
 
 .header__left > ul li:last-child:hover {
@@ -154,6 +154,7 @@
   margin-left: 20px;
   font-size: 25px;
   color: #67758d;
+  cursor: pointer;
 }
 
 .header__mobileLogo {
@@ -187,9 +188,7 @@
   .header {
     padding: 15px 15px;
   }
-  .header__left {
-    display: none;
-  }
+  .header__left,
   .header__right {
     display: none;
   }
